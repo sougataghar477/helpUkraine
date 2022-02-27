@@ -76,7 +76,7 @@ section {
   transition: 0.2s ease;
   color: #fff;
   position: relative;
-  font-size: 1.1rem;
+  font-size: clamp(0.875rem, 0.417vmin + 0.792rem, 1.125rem);
 }
 .urlbox * {
   color: inherit;
@@ -88,8 +88,8 @@ section {
 
 .urlbox img {
   z-index: 50;
-  height: 4rem;
-  padding: 0.5rem;
+  height: min(4rem, 10vw);
+  padding: min(0.5rem, 1.125vw);
   margin: 0.5rem;
 }
 .urlbox .service img {
@@ -117,4 +117,14 @@ section {
 .urlbox .twitter img {
   background: #fff;
   border-radius: 0.5rem;
+}
+
+@media (max-width: 40rem) {
+  .urlbox .service img {
+    display: none;
+  }
+  .urlbox .service span {
+    justify-content: left;
+    padding-left: 1rem;
+  }
 }
