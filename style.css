@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    
+}
+.bg-help-ukraine{
+    /* background-image: linear-gradient(to bottom, #005BBB , #FFD500); */
+    /* background-image: url('UkraineFemaleSoliderWithFlower.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; */
+    height: auto;
+    color: white;
+    display: flex;
+    flex-direction: column;
+align-items: center;
+padding: 30px 10px;
+position: relative;
+overflow: hidden;
+}
+.help-Ukraine-links{
+color:white;
+background-color: #005BBB;
+text-decoration: none;
+max-width:600px;
+	flex-shrink: 0;
+    width: 100%;
+text-align: center;
+margin-top:1em;
+padding: 1em 0;
+display: block;
+transition: .2s ease;
+line-height: 1.6;
+}
+.help-Ukraine-links:hover{
+    transform: scale(1.1);
+    color:#FFD500
+}
+ .heroImg{
+     position: absolute;
+     inset: 0;
+     z-index: -5;
+     object-fit: cover;
+     max-width: 100%;
+     height: 100%;
+     object-position: center;
+ }
