@@ -1,53 +1,120 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-*{
-    padding: 0;
-    box-sizing: border-box;
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
-    
-}
-.bg-help-ukraine{
-    /* background-image: linear-gradient(to bottom, #005BBB , #FFD500); */
-    /* background-image: url('UkraineFemaleSoliderWithFlower.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center; */
-    height: auto;
-    color: white;
-    display: flex;
-    flex-direction: column;
-align-items: center;
-padding: 30px 10px;
-position: relative;
-overflow: hidden;
-}
-.help-Ukraine-links{
-color:white;
-background-color: #005BBB;
-text-decoration: none;
-max-width:600px;
-	flex-shrink: 0;
-    width: 100%;
-text-align: center;
-margin-top:1em;
-padding: 1em 0;
-display: block;
-transition: .2s ease;
-line-height: 1.6;
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  box-sizing: border-box;
 }
 
- .heroImg{
-     position: absolute;
-     inset: 0;
-     z-index: -5;
-     object-fit: cover;
-     max-width: 100%;
-     height: 100%;
-     object-position: center;
- }
- @media all and (min-width: 900px) {
-    .help-Ukraine-links:hover{
-   transform: scale(1.1);
-   color:#FFD500
+.sr-only {
+  width: 0;
+  height: 0;
+  overflow: hidden;
 }
+
+main,
+section,
+.urlbox,
+.urlbox a,
+.urlbox span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main,
+section {
+  flex-direction: column;
+}
+
+body {
+  padding: 0.01px;
+  margin: 0.01px;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  background-image: url(UkraineFemaleSoliderWithFlower.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+main {
+  width: min(95vw, 120vh);
+  border-radius: 2rem;
+  background: linear-gradient(180deg, #005bbb4d 0%, #ffd5004d 100%);
+  margin: 1rem auto;
+  padding-block: 2rem;
+}
+
+header {
+  width: min(80vw, 100vh);
+  background: #0003;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  color: #fff;
+}
+header h1,
+header p {
+  margin: 0;
+}
+
+header a {
+  color: #fff;
+  transition: 0.2s ease;
+}
+header a:is(:hover, :focus-visible) {
+  color: #ffd500;
+}
+
+section {
+  gap: 1rem;
+}
+
+.urlbox {
+  border-radius: 0.5rem;
+  background-color: #005bbb;
+  width: min(80vw, 100vh);
+  transition: 0.2s ease;
+  color: #fff;
+  position: relative;
+  font-size: 1.1rem;
+}
+.urlbox * {
+  color: inherit;
+}
+.urlbox:is(:hover, :focus-visible) {
+  transform: scale(1.025, 1.05);
+  color: #ffd500;
+}
+
+.urlbox img {
+  z-index: 50;
+  height: 4rem;
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
+.urlbox .service img {
+  background: #fff8;
+  border-radius: 0.5rem;
+}
+
+.urlbox a:first-child {
+  margin-right: auto;
+}
+
+.urlbox span {
+  text-align: center;
+  text-decoration: none;
+  position: absolute;
+  inset: 0;
+}
+
+.urlbox .twitter {
+  transition: 0.2s ease;
+}
+.urlbox .twitter:is(:hover, :focus-visible) {
+  transform: scale(1.1);
+}
+.urlbox .twitter img {
+  background: #fff;
+  border-radius: 0.5rem;
 }
