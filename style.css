@@ -35,10 +35,7 @@ display: block;
 transition: .2s ease;
 line-height: 1.6;
 }
-.help-Ukraine-links:hover{
-    transform: scale(1.1);
-    color:#FFD500
-}
+
  .heroImg{
      position: absolute;
      inset: 0;
@@ -48,3 +45,9 @@ line-height: 1.6;
      height: 100%;
      object-position: center;
  }
+ @media all and (min-width: 900px) {
+    .help-Ukraine-links:hover{
+   transform: scale(1.1);
+   color:#FFD500
+}
+}
