@@ -38,7 +38,7 @@ body {
 main {
   width: min(95vw, 120vh);
   border-radius: 2rem;
-  background: linear-gradient(180deg, #005bbb4d 0%, #005bbb4d 50%, #ffd5004d 50%, #ffd5004d 100%);
+  background: linear-gradient(180deg, #005bbb4d 0%, #ffd5004d 100%);
   margin: 1rem auto;
   padding-block: 2rem;
 }
@@ -115,6 +115,6 @@ section {
   transform: scale(1.1);
 }
 .urlbox .twitter img {
-  background: #fff8;
+  background: #fff;
   border-radius: 0.5rem;
 }
